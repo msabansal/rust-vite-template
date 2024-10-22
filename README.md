@@ -7,7 +7,7 @@ A turbo repo that creates utilizes a rust wasm submodule in a vite app.
 Run the following command:
 
 ```sh
-npx create-turbo@latest -e https://github.com/msabansal/rust-wasm-template
+npx create-turbo@latest -e https://github.com/msabansal/rust-vite-template
 ```
 
 ## What's inside?
