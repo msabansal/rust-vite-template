@@ -1,0 +1,21 @@
+[workspace]
+members = ["packages/native-app"]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/rust-windowing/winit"
+
+[workspace.dependencies]
+cfg-if = "1"
+env_logger = "0.11"
+console_error_panic_hook = "0.1"
+console_log = "1.0"
+wasm-bindgen = "0.2"
+wasm-bindgen-futures = "0.4"
+web-sys = "0.3"
+cfg_aliases = "0.2.1"
+tracing = { version = "0.1.40" }
+tracing-subscriber = { version = "0.3.18" }
+tracing-web = "0.1"

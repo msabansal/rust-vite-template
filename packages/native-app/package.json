@@ -1,0 +1,31 @@
+{
+  "name": "@repo/native-app",
+  "collaborators": [
+    "Sandeep Bansal <sandeep.bansal85@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "main": "./dist/native_app.js",
+  "types": "./dist/native_app.d.ts",
+  "scripts": {
+    "build": "wasm-pack build --target bundler --out-dir dist",
+    "dev": "npm-watch",
+    "test": "wasm-pack test --node",
+    "lint": "cargo fmt && cargo clippy --all-targets --all-features -- -D warnings"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src/**/*"
+      ],
+      "extensions": "rs,js,ts,wasm"
+    }
+  },
+  "sideEffects": [
+    "./dist/native_app.js"
+  ],
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "npm-watch": "^0.13.0",
+    "wasm-pack": "^0.13.0"
+  }
+}
